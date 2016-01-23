@@ -7,7 +7,8 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-	myMatrix<<-matrix(c(1,0,0,1),2,2)
+#	myMatrix<<-matrix(c(1,0,0,1),2,2)
+	myMatrix<<- x
 	myMatrixInverse <<- solve(myMatrix)
 
 }
