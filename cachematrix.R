@@ -27,7 +27,7 @@ makeVector <- function(x = numeric()) {
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
-    m <- x$getinverse()
+    m <- x$getInverse()
       if(!is.null(m)){
 		message("Retrieving from cache")
 	      	return(m)
@@ -35,6 +35,6 @@ cacheSolve <- function(x, ...) {
 
 	data <- x$get()
 	m <- solve(data, ...)
-	x$setmatrix(m)
+	x$setInverse(m)
 	m
 }
