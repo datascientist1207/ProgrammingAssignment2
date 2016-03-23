@@ -4,7 +4,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-makeVector <- function(x = numeric()) {
 	m <- NULL
 	set <- function(y) {
 		x <<- y
